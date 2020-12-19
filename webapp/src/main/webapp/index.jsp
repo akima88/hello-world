@@ -1,14 +1,4 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>Superscript and Subscript</title> 
-</head> 
-<body> 
-    <!--Text in Normal-->
-    <p>Hello GeeksforGeeks</p> 
-    <!--Text in Superscript-->    
-    <p>Hello <sup>GeeksforGeeks</sup></p> 
-    <!--Text in Subcript-->    
-    <p>Hello <sub>GeeksforGeeks</sub></p> 
-</body> 
-</html> 
+<h1> Hello, Welcome to Simple DevOps Project !!   </h1>
+<title>Akima tesing</title>
+<h2> Aki </h2>
+<h1> Testing this shit</h2>
