@@ -1,112 +1,23 @@
-<!DOCTYPE HTML>
-<!--
-	Lens by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Lens by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload-0 is-preload-1 is-preload-2">
+Репозитории артефактов
 
-		<!-- Main -->
-			<div id="main">
+Репозитории артефактов являются выделенными хранилищами результатов сборки, устроенными так, чтобы упростить поиск нужного артефакта (по имени, версии, типу артефакта). Они позволяют группе разработчиков пользоваться результатами работы друг друга без необходимости иметь копии исходных кодов их модулей и выполнять сборку дерева зависимостей с 0. Maven-совместимые репозитарии стали стандартом де факто публикации результатов различных открытых проектов.
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Lens</h1>
-						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</header>
+Нужно заметить, что pom-файлы, содержащие модель проекта, также являются артефактами и могут хранится в репозитариях вместе со всеми (на самом деле по крайней мере урезанные их версии, содержащие только идентификацию модуля и зависимости, хранятся всегда). Таким образом репозитарий является в том числе источником информации (как миннимум достаточной для дистрибуции) о хранимых в нём модулях.
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
-						<article>
-							<a class="thumbnail" href="images/fulls/01.jpg" data-position="left center"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Diam tempus accumsan</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Vivamus convallis libero</h2>
-							<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/03.jpg" data-position="top center"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Nec accumsan enim felis</h2>
-							<p>Maecenas eleifend tellus ut turpis eleifend, vitae pretium faucibus.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Donec maximus nisi eget</h2>
-							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Nullam vitae nunc vulputate</h2>
-							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Phasellus magna faucibus</h2>
-							<p>Nulla dignissim libero maximus tellus varius dictum ut posuere magna.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Proin quis mauris</h2>
-							<p>Etiam ultricies, lorem quis efficitur porttitor, facilisis ante orci urna.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/08.jpg"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Gravida quis varius enim</h2>
-							<p>Nunc egestas congue lorem. Nullam dictum placerat ex sapien tortor mattis.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Morbi eget vitae adipiscing</h2>
-							<p>In quis vulputate dui. Maecenas metus elit, dictum praesent lacinia lacus.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Habitant tristique senectus</h2>
-							<p>Vestibulum ante ipsum primis in faucibus orci luctus ac tincidunt dolor.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/11.jpg"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Pharetra ex non faucibus</h2>
-							<p>Ut sed magna euismod leo laoreet congue. Fusce congue enim ultricies.</p>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/12.jpg"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Mattis lorem sodales</h2>
-							<p>Feugiat auctor leo massa, nec vestibulum nisl erat faucibus, rutrum nulla.</p>
-						</article>
-					</section>
+Итак, какие бонусы они нам дают:
+Структурированное хранение артефактов, их каталогизация.
+Повторное использование артефактов.
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
-						</ul>
-					</footer>
+Утилита управления жизненным циклом
 
-			</div>
+Название получилось достаточно пафосное, однако оно вполне соответствует высокой миссии и сложности предмета.
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
+Прежде чем погрузиться в её функции, необходимо немного познакомится с теорией организации жизненного цикла модуля в Maven. Жизненным циклом называется вся совокупность операций над модулем от инициализации сборки до развёртывания. В процессе прохождения жизненного цикла выполняются определённые операции над модулем, формируются некоторые артефакты. Жизненный цикл разделён на фазы. Каждая фаза подразумевает перевод модуля в новое состояние в результате её прохождения и появление новых артефактов. Каждая предыдущая фаза подготовливает основу для последующей. Список фаз является по сути частью POM, но глобальной, общей для всех модулей. Поный список приводить бессмысленно, но для примера приведу несколько фаз (достаточно интуитивно названных, на мой взгляд :) ) в порядке их следования: compile,… test,… deploy.
 
-	</body>
-</html>
+В рамках каждой фазы выполняется некоторый набор целей в зависимости от модели конкретного модуля. Цель является конкретной операцией над исходными кодами и/или артефактами.
+
+Теперь к самой утилите. Она отвечает за реализацию жизненного цикла на основании модели проекта. Состоит из двух основных компонентов:
+Во-первых из совсем маленького ядра, в котором описаны (захардкожены, как говорит простой народ) базовые принципы устройства проектов, цели по умолчанию для фаз стандартных типов проектов, рабочая среда для плагинов (интерфейсы доступа к моделям, репозитариям, ФС, настройкам и т.п.).
+Во-вторых из плагинов. Они собственно содержат код, выполняющий цели. Практически вся внешняя функциональность mvn реализуется ими. Именно они генерируют, компилируют, тестируют, пакуют и т.д. и т.п.
+
+Общение с этой утилитой построено предельно просто: вы говорите до какой кондиции фазы нужно довести клиента модуль и она это делает. Вся сложность формулировки и выполнения задач по достижению цели остаётся на совести разработчиков плагинов (ну хорошо, немного остаётся на разработчика модели). Например говорим compile и нам компилируют, причём не только то, что вылезло из VCS но и генерируют необходимое например wsimport'ом и результаты тоже компилируют.
